@@ -17,8 +17,8 @@ namespace BuyMeAutomation
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             Browser browser = new Browser("MVCForum", driver, TestExecutionScopesManager);
-            //AddCleanupAction(() => browser.Dispose());
-             landingPage = new LandingPage(browser);
+            AddCleanupAction(() => browser.Dispose());
+            landingPage = new LandingPage(browser);
         }
 
 

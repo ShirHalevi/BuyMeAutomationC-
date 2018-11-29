@@ -15,7 +15,6 @@ namespace BuyMeAutomation
 
         internal RegisterPopUp ClickOnRegisterButton()
         {
-            // _browser.WaitForElement(By.XPath("//span[@class='text-btn']"), "Registr Button on Entry pop up").Click();
             _browser.WaitForElement(By.ClassName("text-btn"), "Registr Button on Entry pop up").Click();
             return new RegisterPopUp(_browser);
 
